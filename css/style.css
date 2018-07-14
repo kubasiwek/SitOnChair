@@ -9,7 +9,14 @@ body {
     width:1250px;
     margin: 0 auto;
 }
+.color {
+    color: #24BA9F;
+}
 
+.center {
+    width:1024px;
+    margin: 0 auto;
+}
 header{
     width:100%;
     height:40px;
@@ -37,14 +44,7 @@ header .center {
 }
 
 
-.color {
-    color: #24BA9F;
-}
 
-.center {
-    width:1100px;
-    margin: 0 auto;
-}
 
 .slider {
     width:100%;
@@ -63,6 +63,7 @@ header .center {
 
 .arrow:hover{
     cursor:pointer;
+    opacity:0.7;
 }
 
 .arrow__left {
@@ -156,7 +157,7 @@ header .center {
 .offer .center {
     padding-top:25px;
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
 
 }
 
@@ -238,17 +239,38 @@ header .center {
     height:720px;
     width:100%;
     background: #F1F1F1;
+    display:flex;
+
 }
 
 .pricing .center {
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:space-between;
+}
+
+.boxes {
+    padding-top:70px;
+    width:100%;
+    display:flex;
+    position:relative;
+    justify-content:space-between;
+}
+
+.boxes:before {
+    content:"CENNIK";
+    width:330px;
+    border-bottom:7px solid #24BA9F;
+    position:absolute;
+    font-size:20px;
+    top:40px;
+    left:0;
 }
 
 
 .box{
-    margin: 50px;
+    margin-top: 60px;
+    padding:30px 0 15px 0;
     display: flex;
     flex-direction:column;
     justify-content:space-around;
@@ -259,6 +281,39 @@ header .center {
     text-align: center;
     background: #F9F9F9;
     position:relative;
+}
+
+.box:hover{
+    background: #24BA9F;
+    border: 1px solid #24BA9F;
+
+}
+
+.box:hover .head{
+    color:white;
+}
+
+.box:hover .bigDot{
+    background: #24BA9F;
+    border: 1px solid #24BA9F;
+}
+
+.box:hover .smallDot {
+    background: white;
+}
+
+.box:hover .pricing__button {
+    background: #fff;
+    color: #24BA9F;
+}
+
+.box:hover .price__dot {
+    border: 1px solid #24BA9F;
+    color: #24BA9F;
+}
+
+.pricing__button:hover {
+    cursor:pointer;
 }
 
 .bigDot{
@@ -285,49 +340,54 @@ header .center {
 
 .head {
     display: flex;
-    width: 60%;
     height:20px ;
     color: #24BA9F;
-    text-align:center;
     font-size:1.4em;
     font-weight:700;
     text-transform:uppercase;
 
 }
-.text {
-    display: flex;
-    width: 80%;
-    height:50px ;
-    text-align:justify;
-
-}
 
 .pricing__button {
-    display:block;
+    display:flex;
     width:120px;
     height:35px;
     background: #24BA9F;
     color:white;
-    font-size: 20px;
+    font-size: 16px;
     border-radius:10px;
     justify-content:center;
     align-items:center;
     font-weight:400;
-
 }
 
-.price__dot {
 
-    top:80px;
+.price__dot {
     width:130px;
     height:130px;
     border-radius:50%;
-    border: 1px solid #3D3D3D;
+    border: 1px solid #D3D3D3;
     background: #fff;
+    font-weight:700;
+    font-size: 16px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    color:#D3D3D3;
+    padding-bottom:8px;
+  }
+.price__dot span {
+    font-size: 40px;
+    padding-left:8px;
+
+}
+.price__dot sup {
+    font-size: 14px;
+
 }
 
 .price__table {
-
+    height:163px;
 
 }
 
@@ -352,4 +412,124 @@ header .center {
 .contact {
     height:550px;
     width:100%;
+    position:relative;
 }
+
+.contact .center {
+    height:100%;
+    padding-top:100px;
+    position:relative;
+
+}
+
+
+.contact .center:before {
+    content:"KONTAKT";
+    width:330px;
+    border-bottom:7px solid #24BA9F;
+    position:absolute;
+    font-size:20px;
+    top:40px;
+    left:0;
+}
+
+.contact form {
+    height:400px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.form__left input {
+    width:630px;
+    height:60px;
+    outline:0;
+    border: 1px solid #24BA9F;
+    font-size:24px;
+    color: #24BA9F;
+    padding-left:10px;
+
+}
+.form__left input::placeholder {
+    width:630px;
+    outline:0;
+    color: #909090;
+    font-size: 16px;
+    font-weight:300;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form__left {
+    height: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.form__left input:last-child {
+    height:190px;
+}
+
+.form__right {
+    height:100%;
+    width: 330px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction:column;
+}
+.accept {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    color: #909090;
+}
+
+.accept span {
+    width: calc(100% - 60px);
+}
+.accept img {
+    border: 1px solid #24BA9F;
+}
+
+.accept img:hover {
+    opacity:0.8;
+    cursor:pointer;
+}
+
+.form__right .pricing__button {
+    width:345px;
+    height:70px;
+    font-size:32px;
+}
+.form__right .pricing__button:hover {
+    opacity:0.7;
+}
+footer {
+    height:100px;
+    width:100%;
+    color: #909090;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+header a {
+    text-decoration:none;
+    color:white;
+}
+
+footer > div {
+    width: 360px;
+    height:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.footer__logo {
+    font-size:20px;
+}
+

@@ -5,14 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
 <header>
     <div class="center">
-        <div class="logo">SIT <span class="color">ON</span> CHAIR</div>
+        <a href="#"><div class="logo">SIT <span class="color">ON</span> CHAIR</div></a>
         <ul class="top__menu">
             <li>O FIRMIE</li>
             <li>GALERIA</li>
@@ -32,7 +32,9 @@
                 repudiandae unde. consectetur adipisicing elit. Amet architecto distinctio ducimus eos.
             </article>
             <div class="button__middle">
-              <a href="#"><div class="button"><span>ZOBACZ WIĘCEJ</span></div></a>
+                <a href="#">
+                    <div class="button"><span>ZOBACZ WIĘCEJ</span></div>
+                </a>
             </div>
         </div>
         <div class="arrow"><span class="arrow__right"></span></div>
@@ -45,7 +47,9 @@
         <div class="offer__image img2"><img src="images/box2_img.jpg"/></div>
         <div class="offer__right">
             <p>Finds all inputs</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda atque consectetur consequatur delectus fuga fugiat, id inventore ipsa itaque iure libero officia optio pariatur repellat tempore tenetur velit. Accusantium!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda atque consectetur
+                consequatur delectus fuga fugiat, id inventore ipsa itaque iure libero officia optio pariatur repellat
+                tempore tenetur velit. Accusantium!</p>
             <p>Notice there is no change when clicking the checkboxes since no click events have been</p>
         </div>
     </div>
@@ -53,52 +57,84 @@
 
 <section class="pricing">
     <div class="center">
-        <div class="box">
-            <div class="bigDot"> <div class="smallDot"></div></div>
-            <div class="head">BASIC PLAN</div>
-            <div class="price__dot"></div>
-            <div class="price__table">
-                <div class="price__bar">Zakup towaru + dowóz</div>
-                <div class="price__bar">Serwis</div>
-            </div>
-            <div class="pricing__button"><span>DOŁĄCZ</span></div>
-        </div>
 
-        <div class="box">
-            <div class="bigDot"> <div class="smallDot"></div></div>
-            <div class="head">STANDARD PLAN</div>
-            <div class="price__dot"></div>
-            <div class="price__table">
-                <div class="price__bar"></div>
-                <div class="price__bar"></div>
-                <div class="price__bar"></div>
+        <div class="boxes">
+            <div class="box">
+                <div class="bigDot">
+                    <div class="smallDot"></div>
+                </div>
+                <div class="head">BASIC PLAN</div>
+                <div class="price__dot"><span>85<sup>99</sup></span>PLN/MSC</div>
+                <div class="price__table">
+                    <div class="price__bar">Zakup towaru + dowóz</div>
+                    <div class="price__bar">Serwis</div>
+                </div>
+                <div class="pricing__button"><span>DOŁĄCZ</span></div>
             </div>
-            <div class="pricing__button"><span>DOŁĄCZ</span></div>
-        </div>
 
-        <div class="box">
-            <div class="bigDot"> <div class="smallDot"></div></div>
-            <div class="head">ADVANCE PLAN</div>
-            <div class="price__dot"></div>
-            <div class="price__table">
-                <div class="price__bar"></div>
-                <div class="price__bar"></div>
-                <div class="price__bar"></div>
-                <div class="price__bar"></div>
+            <div class="box">
+                <div class="bigDot">
+                    <div class="smallDot"></div>
+                </div>
+                <div class="head">STANDARD PLAN</div>
+                <div class="price__dot"><span>95<sup>99</sup></span>PLN/MSC</div>
+                <div class="price__table">
+                    <div class="price__bar">Zakup towaru + dowóz</div>
+                    <div class="price__bar">Serwis</div>
+                    <div class="price__bar">Gwarancja 5 lat</div>
+                </div>
+                <div class="pricing__button"><span>DOŁĄCZ</span></div>
             </div>
-            <div class="pricing__button"><span>DOŁĄCZ</span></div>
+
+            <div class="box">
+                <div class="bigDot">
+                    <div class="smallDot"></div>
+                </div>
+                <div class="head">ADVANCE PLAN</div>
+                <div class="price__dot"><span>211<sup>99</sup></span>PLN/MSC</div>
+                <div class="price__table">
+                    <div class="price__bar">Zakup towaru + dowóz</div>
+                    <div class="price__bar">Serwis</div>
+                    <div class="price__bar">Gwarancja 8 lat</div>
+                    <div class="price__bar">Porady projektanta</div>
+                </div>
+                <div class="pricing__button"><span>DOŁĄCZ</span></div>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="contact">
     <div class="center">
-
+        <form>
+            <div class="form__left">
+                <input type="text" placeholder="Imię"/>
+                <input type="email" placeholder="email"/>
+                <input type="textarea" placeholder="Wiadomość"/>
+            </div>
+            <div class="form__right">
+                <img src="images/red_chair.png"/>
+                <div class="accept">
+                    <img src="images/form_ok.jpg"/>
+                    <span>zgadzam się na przetwarzanie danych osobowych</span>
+                </div>
+                <div class="pricing__button"><span>WYŚLIJ</span></div>
+            </div>
+        </form>
     </div>
 </section>
 
 <footer class="center">
-
+    <p>Copyright2018 | All Rights reserved. - Sit On Chair</p>
+    <div>
+        <div class="socials">
+            <a href="#"><img src="images/flickr.png"/></a>
+            <a href="#"><img src="images/vimeo.png"/></a>
+            <a href="#"><img src="images/pinterest.png"/></a>
+            <a href="#"><img src="images/twitter.png"/></a>
+        </div>
+        <div class="footer__logo">SIT<b> ON</b> CHAIR</div>
+    </div>
 </footer>
 
 </body>
