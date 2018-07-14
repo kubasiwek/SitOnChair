@@ -59,6 +59,9 @@ header .center {
 .arrow {
     width:50px;
     height:300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .arrow:hover{
@@ -74,9 +77,7 @@ header .center {
     border-bottom: 3px solid #24BA9F;
     border-left: 3px solid #24BA9F;
     transform:rotate(45deg);
-    position:absolute;
-    top:calc(50% - 28px);
-    left:90px;
+
 }
 
 .arrow__right {
@@ -87,9 +88,7 @@ header .center {
     border-top: 3px solid #24BA9F;
     border-right: 3px solid #24BA9F;
     transform:rotate(45deg);
-    position:absolute;
-    top:calc(50% - 28px);
-    right:90px;
+
 }
 
 .slider:after:hover {
@@ -181,6 +180,11 @@ header .center {
     height: 225px;
     border: 1px solid #D9D9D9;
     position:relative;
+}
+
+.offer .center img:hover {
+    opacity:0.9;
+    cursor:pointer;
 }
 
 .offer__image:before {
