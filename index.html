@@ -7,23 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>SIT ON CHAIR</title>
 </head>
 <body>
-<header>
+<header class="top__header">
     <div class="center">
-        <a href="#"><div class="logo">SIT <span class="color">ON</span> CHAIR</div></a>
+        <a href="#">
+            <div class="logo">SIT <span class="color">ON</span> CHAIR</div>
+        </a>
         <ul class="top__menu">
             <li class="li1">
                 <div class="pole">O FIRMIE</div>
 
                 <div class="drop__div">
 
-                <ul class="dropdown">
-                    <li><a href="#">Aktualności</a></li>
-                    <li><a href="#">Nasz team</a></li>
-                    <li><a href="#">Historia</a></li>
-                </ul>
+                    <ul class="dropdown">
+                        <li><a href="#">Aktualności</a></li>
+                        <li><a href="#">Nasz team</a></li>
+                        <li><a href="#">Historia</a></li>
+                    </ul>
                 </div>
             </li>
             <li>GALERIA</li>
@@ -35,18 +37,30 @@
 <section class="slider">
     <div class="center">
         <a class="arrow"><span class="arrow__left"></span></a>
-        <img src="images/black_chair.png"/>
+        <ul class="photoes">
+            <li><img src="images/black_chair.png"/></li>
+            <li><img src="images/orange_chair.png"/></li>
+        </ul>
         <div class="slider__right__side">
-            <p>SIT<span class="color"> ON </span>OUR<span class="color"> CHAIR </span></p>
-            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto distinctio ducimus eos
-                itaque neque officiis tempore voluptas! Adipisci consequatur ea eos est et fugit nesciunt omnis ratione
-                repudiandae unde. consectetur adipisicing elit. Amet architecto distinctio ducimus eos.
-            </article>
-            <div class="button__middle">
-                <a href="#">
-                    <div class="button"><span>ZOBACZ WIĘCEJ</span></div>
-                </a>
-            </div>
+            <ul class="articles">
+                <li><p>SIT<span class="color"> ON </span>OUR<span class="color"> CHAIR </span></p>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto distinctio ducimus eos
+                        itaque neque officiis tempore voluptas! Adipisci consequatur ea eos est et fugit nesciunt omnis ratione
+                        repudiandae unde. consectetur adipisicing elit. Amet architecto distinctio ducimus eos.
+                    </article><div class="button__middle">
+                        <a href="#">
+                            <div class="button"><span>ZOBACZ WIĘCEJ</span></div>
+                        </a>
+                    </div></li>
+                <li><p>SIT<span class="color"> ON </span>OUR<span class="color"> CHAIR </span></p>
+                    <article>Consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aspernatur autem culpa delectus dignissimos error esse laborum praesentium, quae quia quidem sed sit veritatis voluptas voluptatum. Beatae eveniet in libero. Amet architecto distinctio ducimus.
+                    </article><div class="button__middle">
+                        <a href="#">
+                            <div class="button"><span>ZOBACZ WIĘCEJ</span></div>
+                        </a>
+                    </div></li>
+
+            </ul>
         </div>
         <a class="arrow"><span class="arrow__right"></span></a>
     </div>
@@ -54,8 +68,9 @@
 
 <section class="offer">
     <div class="center">
-        <div class="offer__image img1"><img src="images/box1_img.jpg"/></div>
-        <div class="offer__image img2"><img src="images/box2_img.jpg"/></div>
+        <!--to teoretycznie miały być backgroundy a nie obrazy...-->
+        <a class="offer__image img1"><div class="offer__box"><span class="clair">Chair CLAIR</span></div></a>
+        <a class="offer__image img2"><div class="offer__box"><span class="clair">Chair MARGARITA</span></div></a>
         <div class="offer__right">
             <p>Finds all inputs</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda atque consectetur
@@ -114,6 +129,81 @@
         </div>
     </div>
 </section>
+<section class="application ">
+    <div class="center">
+        <section class="choice_part inline">
+            <header>
+                <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                <span class="green_bell"></span>
+            </header>
+
+            <div class="form">
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz rodzaj</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li data-price="180">Clair</li>
+                        <li data-price="120">Margarita</li>
+                        <li data-price="150">Selena</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz kolor</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li data-price="80">Czerwony</li>
+                        <li data-price="90" >Czarny</li>
+                        <li data-price="99">Pomarańczowy</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz materiał</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li data-price="120">Tkanina</li>
+                        <li data-price="200">Skóra</li>
+                    </ul>
+                </div>
+                <div class="checkbox check-box">
+                    <input type="checkbox" id="transport" data-price="200">
+                    <label for="transport">Transport</label>
+                </div>
+                <!--<div class="checkbox"></div>-->
+                <!--<span class="list_label inline_text">Transport</span>-->
+            </div>
+        </section>
+
+        <section class="image_part inline">
+            <img src="images/red_chair.png">
+        </section>
+
+        <section class="summary_part inline">
+            <header class="align_right">
+                <h3>PODSUMOWANIE</h3>
+                <span class="green_bell"></span>
+            </header>
+
+            <div class="summary_panel">
+                <div class="panel_left">
+                    <h4 class="title">Twój fotel</h4>
+                    <span class="color"></span>
+                    <span class="pattern"></span>
+                    <span class="transport"></span>
+                </div>
+                <div class="panel_right">
+                    <h4 class="title value"></h4>
+                    <span class="color value"></span>
+                    <span class="pattern value"></span>
+                    <span class="transport value"></span>
+                </div>
+                <div class="sum_label">SUMA</div>
+                <div class="sum"><strong></strong></div>
+            </div>
+            <a href="" class="green_button">Zamawiam</a>
+            <div class="errors"></div>
+        </section>
+    </div>
+</section>
 
 <section class="contact">
     <div class="center">
@@ -127,9 +217,10 @@
             <div class="form__right">
                 <img src="images/red_chair.png"/>
                 <div class="accept">
-                    <img src="images/form_ok.jpg"/>
-                    <span>zgadzam się na przetwarzanie danych osobowych</span>
+                    <input type="checkbox" id="img"></input><!--<img src="images/form_ok.jpg"/>-->
+                    <label for="img">zgadzam się na przetwarzanie danych osobowych</label>
                 </div>
+
                 <input type="submit" class="pricing__button" value="Wyślij"/>
             </div>
         </form>
@@ -150,4 +241,5 @@
 </footer>
 
 </body>
+<script src="js/app.js"></script>
 </html>
